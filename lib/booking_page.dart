@@ -13,10 +13,10 @@ class BookingPage extends StatelessWidget {
   }
 }
 
-void clearForm() {
-  var fieldController;
-  fieldController.clear();
-}
+// void clearForm() {
+//   var fieldController;
+//   fieldController.clear();
+// }
 
 class CustomerForm extends StatelessWidget {
   const CustomerForm({super.key});
@@ -61,7 +61,7 @@ class CustomerForm extends StatelessWidget {
             child: TextFormField(
               decoration: const InputDecoration(
                 border: OutlineInputBorder(),
-                labelText: 'Phone Number (linked to GCash)',
+                labelText: 'Phone Number',
               ),
               keyboardType: TextInputType.number,
             ),
@@ -93,6 +93,51 @@ class CustomerForm extends StatelessWidget {
               onChanged: (_) {},
             ),
           ),
+          // Check-in/ Check-out Date Picker
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
+            child: Row(
+              children: <Widget>[
+                Expanded(
+                  child: TextFormField(
+                    decoration: const InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'Check-in Date',
+                    ),
+                    keyboardType: TextInputType.datetime,
+                  ),
+                ),
+                const SizedBox(width: 10),
+                Expanded(
+                  child: TextFormField(
+                    decoration: const InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'Check-out Date',
+                    ),
+                    keyboardType: TextInputType.datetime,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          // Number of Guests
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
+            child: Row(
+              children: <Widget>[
+                Expanded(
+                  child: TextFormField(
+                    decoration: const InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'Number of Guests',
+                    ),
+                    keyboardType: TextInputType.number,
+                  ),
+                ),
+              ],
+            ),
+          ),
+
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
             child: Center(
@@ -110,7 +155,7 @@ class CustomerForm extends StatelessWidget {
                       return AlertDialog(
                         title: const Text('Booking Confirmation'),
                         content: const Text(
-                            'Your booking has been confirmed. Thank you for choosing Delorian Hotel!'),
+                            'Your booking request has been sent. Kindly wait for the call from our personnel for the confirmation. Thank you for choosing Delorian Hotel!'),
                         actions: <Widget>[
                           TextButton(
                             onPressed: () {

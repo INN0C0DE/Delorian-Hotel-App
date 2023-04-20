@@ -33,8 +33,9 @@ class CustomerForm extends StatelessWidget {
             child: Text(
               'Book a Room:',
               style: TextStyle(
-                fontSize: 20,
+                fontSize: 25,
                 fontWeight: FontWeight.bold,
+                color: Colors.brown,
               ),
             ),
           ),
@@ -134,7 +135,7 @@ class CustomerForm extends StatelessWidget {
                   child: TextFormField(
                     decoration: const InputDecoration(
                       border: OutlineInputBorder(),
-                      labelText: 'Number of Guests',
+                      labelText: 'Number of Guests (Optional)',
                     ),
                     keyboardType: TextInputType.number,
                   ),
@@ -142,15 +143,20 @@ class CustomerForm extends StatelessWidget {
               ],
             ),
           ),
-
+          const SizedBox(
+            height: 30,
+          ),
+          //Book now button
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
-            child: Center(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: SizedBox(
+              height: 50,
+              width: double.infinity,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
                   backgroundColor: const Color(0xFFA9907E),
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(32.0),
+                    borderRadius: BorderRadius.circular(10),
                   ),
                 ),
                 onPressed: () {
@@ -179,7 +185,7 @@ class CustomerForm extends StatelessWidget {
                 child: const Text(
                   'Book Now',
                   style: TextStyle(
-                    fontSize: 20,
+                    fontSize: 25,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                   ),

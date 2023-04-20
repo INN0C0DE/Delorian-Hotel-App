@@ -1,5 +1,5 @@
 import 'package:carousel_pro_nullsafety/carousel_pro_nullsafety.dart';
-import 'package:delorian_hotel/booking_page.dart';
+import 'package:delorian_hotel/home_page.dart';
 import 'package:flutter/material.dart';
 
 class PremiumRoomPage extends StatelessWidget {
@@ -182,10 +182,10 @@ class _PremiumRoomSliderState extends State<PremiumRoomSlider> {
                       ),
                     ),
                     onPressed: () {
-                      Navigator.of(context).pushReplacement(
+                      Navigator.of(context).push(
                         MaterialPageRoute(
                           builder: (BuildContext context) {
-                            return const BookingPage();
+                            return const StartPage();
                           },
                         ),
                       );

@@ -6,6 +6,7 @@ class WelcomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color(0xFFE4DCCB),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(13.0),

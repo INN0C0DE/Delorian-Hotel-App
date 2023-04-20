@@ -7,6 +7,7 @@ class AboutPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color(0xFFE4DCCB),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(10.0),
@@ -54,7 +55,7 @@ class AboutPage extends StatelessWidget {
                 ),
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color.fromARGB(158, 176, 112, 1),
+                    backgroundColor: const Color(0xFFA9907E),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(32.0),
                     ),
@@ -82,50 +83,56 @@ class AboutPage extends StatelessWidget {
                   ),
                 ),
                 Card(
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(15.0),
-                        side: BorderSide(color: Colors.grey[300]!, width: 1)),
-                    margin: const EdgeInsets.fromLTRB(15, 20, 15, 10),
-                    child: Column(
-                      children: [
-                        Container(
-                          margin: const EdgeInsets.all(5),
-                          child: const ListTile(
-                              title: Text("Raphael Arnaldo Cruz",
-                                  style: TextStyle(
-                                      color: Color.fromRGBO(28, 76, 78, 1),
-                                      fontWeight: FontWeight.w600)),
-                              subtitle: Text("UI/UX Developer",
-                                  style: TextStyle(
-                                      color: Color.fromRGBO(28, 76, 78, 1),
-                                      fontWeight: FontWeight.w400)),
-                              trailing: SizedBox(width: 50)),
-                        )
-                      ],
-                    )),
+                  color: const Color(0xFFFCFAEE),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(15.0),
+                    side: BorderSide(color: Colors.grey[300]!, width: 1),
+                  ),
+                  margin: const EdgeInsets.fromLTRB(15, 20, 15, 10),
+                  child: Column(
+                    children: [
+                      Container(
+                        margin: const EdgeInsets.all(5),
+                        child: const ListTile(
+                            title: Text("Raphael Arnaldo Cruz",
+                                style: TextStyle(
+                                    color: Color.fromRGBO(28, 76, 78, 1),
+                                    fontWeight: FontWeight.w600)),
+                            subtitle: Text("UI/UX Developer",
+                                style: TextStyle(
+                                    color: Color.fromRGBO(28, 76, 78, 1),
+                                    fontWeight: FontWeight.w400)),
+                            trailing: SizedBox(width: 50)),
+                      )
+                    ],
+                  ),
+                ),
                 Card(
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(15.0),
-                        side: BorderSide(color: Colors.grey[300]!, width: 1)),
-                    margin: const EdgeInsets.fromLTRB(15, 0, 15, 10),
-                    child: Column(
-                      children: [
-                        Container(
-                          margin: const EdgeInsets.all(5),
-                          child: const ListTile(
-                              title: Text("Raphael Arnaldo Cruz",
-                                  style: TextStyle(
-                                      color: Color.fromRGBO(28, 76, 78, 1),
-                                      fontWeight: FontWeight.w600)),
-                              subtitle: Text("Lead Designer",
-                                  style: TextStyle(
-                                      color: Color.fromRGBO(28, 76, 78, 1),
-                                      fontWeight: FontWeight.w400)),
-                              trailing: SizedBox(width: 50)),
-                        )
-                      ],
-                    )),
+                  color: const Color(0xFFFCFAEE),
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(15.0),
+                      side: BorderSide(color: Colors.grey[300]!, width: 1)),
+                  margin: const EdgeInsets.fromLTRB(15, 0, 15, 10),
+                  child: Column(
+                    children: [
+                      Container(
+                        margin: const EdgeInsets.all(5),
+                        child: const ListTile(
+                            title: Text("Raphael Arnaldo Cruz",
+                                style: TextStyle(
+                                    color: Color.fromRGBO(28, 76, 78, 1),
+                                    fontWeight: FontWeight.w600)),
+                            subtitle: Text("Lead Designer",
+                                style: TextStyle(
+                                    color: Color.fromRGBO(28, 76, 78, 1),
+                                    fontWeight: FontWeight.w400)),
+                            trailing: SizedBox(width: 50)),
+                      )
+                    ],
+                  ),
+                ),
                 Card(
+                  color: const Color(0xFFFCFAEE),
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(15.0),
                       side: BorderSide(color: Colors.grey[300]!, width: 1)),

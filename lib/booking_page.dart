@@ -8,6 +8,7 @@ class BookingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
+      backgroundColor: Color(0xFFE4DCCB),
       body: CustomerForm(),
     );
   }
@@ -78,7 +79,11 @@ class CustomerForm extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
             child: DropdownButtonFormField<String>(
+              dropdownColor: const Color(0xFFE4DCCB),
               decoration: const InputDecoration(
+                // fillColor: Color(0xFFA9907E),
+                // focusColor: Color(0xFFA9907E),
+                // hoverColor: Color(0xFFA9907E),
                 border: OutlineInputBorder(),
                 labelText: 'Room Type',
               ),
@@ -143,7 +148,7 @@ class CustomerForm extends StatelessWidget {
             child: Center(
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color.fromARGB(158, 176, 112, 1),
+                  backgroundColor: const Color(0xFFA9907E),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(32.0),
                   ),
@@ -153,9 +158,12 @@ class CustomerForm extends StatelessWidget {
                     context: context,
                     builder: (BuildContext context) {
                       return AlertDialog(
+                        backgroundColor: const Color(0xFFE4DCCB),
                         title: const Text('Booking Confirmation'),
                         content: const Text(
-                            'Your booking request has been sent. Kindly wait for the call from our personnel for the confirmation. Thank you for choosing Delorian Hotel!'),
+                          'Your booking request has been sent. Kindly wait for the call from our personnel for the confirmation. Thank you for choosing Delorian Hotel!',
+                          textAlign: TextAlign.left,
+                        ),
                         actions: <Widget>[
                           TextButton(
                             onPressed: () {

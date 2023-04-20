@@ -57,6 +57,7 @@ class _StartPageState extends State<StartPage> {
       //   child: const Icon(Icons.add),
       // ),
       bottomNavigationBar: NavigationBar(
+        backgroundColor: const Color(0xFFFCFAEE),
         destinations: const [
           NavigationDestination(icon: Icon(Icons.home), label: 'Home'),
           NavigationDestination(

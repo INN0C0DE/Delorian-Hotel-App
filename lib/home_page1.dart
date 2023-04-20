@@ -11,6 +11,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color(0xFFE4DCCB),
       // appBar: AppBar(
       //   title: const Text('Delorian Hotel'),
       // ),
@@ -134,7 +135,7 @@ class HomePage extends StatelessWidget {
                     const EdgeInsets.symmetric(horizontal: 10.0, vertical: 5.0),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
-                  color: Colors.white,
+                  color: const Color(0xFFFCFAEE),
                   boxShadow: const [
                     BoxShadow(
                       color: Colors.black12,
@@ -172,7 +173,7 @@ class HomePage extends StatelessWidget {
                     const EdgeInsets.symmetric(horizontal: 10.0, vertical: 5.0),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
-                  color: Colors.white,
+                  color: const Color(0xFFFCFAEE),
                   boxShadow: const [
                     BoxShadow(
                       color: Colors.black12,
@@ -210,7 +211,7 @@ class HomePage extends StatelessWidget {
                     const EdgeInsets.symmetric(horizontal: 10.0, vertical: 5.0),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
-                  color: Colors.white,
+                  color: const Color(0xFFFCFAEE),
                   boxShadow: const [
                     BoxShadow(
                       color: Colors.black12,
